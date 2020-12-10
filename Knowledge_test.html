@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Page</title>
+    <style>
+        #wrapper {background-color: rgba(121, 223, 121, 0.658);
+            margin: auto;
+            border: 5%;
+            padding: 5%;}
+        p {font-size: larger;}
+        li {font-size: large;
+           }
+        #Email_label {padding-right: 32px;}
+        label {font-size: large;}
+        footer {text-align: center;
+                font-size: 150%;}
+        nav { float: left;
+	            width: 150px;
+                height: 1300px; }
+        nav ul { list-style-type: none;
+		        margin-left: 10px;
+		        padding: 10px; }
+        nav li {padding: 5px;
+                font-size: larger;} 
+        nav a { text-decoration: none;
+		        padding: 10px;
+		        font-weight: bold; }
+        nav a:link { color: #ffffff; }
+        nav a:visited { color: #da1c1c1a; }
+        nav a:hover { color: #1919b6; }	
+    </style>
+   
+</head>
+<body>
+   <div id=wrapper>
+    <h1>Welcome! Test your knowledge of Worldwide Cencorship</h1>
+    <nav>
+        <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="North_Korean_Censorship.html">Korea</a></li>
+          <li><a href="American_Censorship.html">America</a></li>
+          <li><a href="Indian_Censorship.html">India</a></li>
+          <li><a href="Chinese_Censorship.html">China</a></li>
+          <li><a href="Dubai_Censorship.html">Dubai</a></li>
+          <li><a href="Knowledge_test.html">Test Your Knowledge</a></li>
+        </ul>
+    </nav>
+    <form method= post action="https://webdevbasics.net/scripts/demo.php">
+        <fieldset>
+            <legend></legend>
+                <br>
+                <label for="Welcome">
+                    First Name. 
+                </label>
+                <input type="text" required id="FirstName">
+                <br>
+                <label for="Lname">
+                    Last Name.
+                </label>
+                <input type="text" required id="LastName">
+                <br>
+                <label id="Email_label" for="Email">
+                    Email.
+                </label>
+                <input type="email" required id="email">
+           
+                <br>
+                <br>
+                <p>Below I will ask a series of questions about the censorship laws around the world we newly learned about. </p>
+                <br>
+                <label for="Cellphone countries">
+                    Countries that've banned cellphones at least temporarily:
+                </label>
+
+                
+                <br>
+                <br>
+                North Korea
+                <input type="checkbox" id="korea_box">
+                <br>
+                China
+                <input type="checkbox" id="china_box">
+                <br>
+                America
+                <input type="checkbox" id="America_box">
+                <br>
+                India
+                <input type="checkbox" id="india_box">
+                <br>
+                Dubai
+                <input type="checkbox" id="Dubai_box">
+                <br>
+                <br>
+                <label for="LGBT_rights">
+                    Now, put a check for every country that has basic LGBT rights.
+                </label>
+                <br>
+                <br>
+                Korea
+                <input type="checkbox" id="LGBT_Korea">
+                <br>
+                China
+                <input type="checkbox" id="LGBT_China">
+                <br>
+                America
+                <input type="checkbox" id="LGBT_America">
+                <br>
+                India
+                <input type="checkbox" id="LGBT_India">
+                <br>
+                Dubai
+                <input type="checkbox" id="LGBT_Dubai">
+                <br>
+                <br>
+
+                <label for="Range_selection">
+                    Next, you will rank each country in terms of media control they abide by.
+                </label>
+                <br>
+                <br>
+
+                <label>Korea</label>
+                <input type="range" id="Korea_rating">
+                <br>
+                <label>China</label>
+                <input type="range" id="China_rating">
+                <br>
+                <label>America</label>
+                <input type="range" id="America_rating">
+                <br>
+                <label>India</label>
+                <input type="range" id="India_rating">
+                <br>
+                <label>Dubai</label>
+                <input type="range" id="Dubai_rating">
+                <br>
+                <br>
+                <label for="answer_ready">
+                    Click submit to submit your answers, then go back and hit the button at the bottom.
+                </label>
+                <br>
+                <br>
+
+                <input type=submit value="Submit" id="submit" onclick="answers">
+              
+                <input type="reset" value="Reset" id="reset" >
+
+        
+                
+
+        </fieldset>
+    </form>
+    <label>
+        Now click this button to check your answers!
+    </label>
+    <button>
+        <a href="Answers.html"> Answers</a> 
+    </button>
+    <footer>Copyright &copy; 2020
+    </footer>
+   </div>
+
+   
+    
+</body>
+</html>
